@@ -8,7 +8,7 @@ const choices = document.querySelectorAll(".choice");
 const msg =  document.querySelector("#msg");
 
 const makeCompChoice = () => {
-    const options = ["rock", "paper", "sci"];
+    const options = ["sci", "rock", "paper"];
     const randId = Math.floor( Math.random() * 3 );
     return options[randId];
 }
