@@ -1,5 +1,8 @@
-let userscore = 0;
-let compscore = 0;
+let userScore = 0;
+let compScore = 0;
+
+const userScoreShow = document.querySelector("#user-score");
+const compScoreShow = document.querySelector("#comp-score");
 
 const choices = document.querySelectorAll(".choice");
 const msg =  document.querySelector("#msg");
@@ -13,11 +16,15 @@ const makeCompChoice = () => {
 const winner = (userState) =>{
     if (userState){
         // console.log("You win!");
+        userScore++;
+        userScoreShow.innerText = userScore;
         msg.innerText = "You win!";
         msg.style.backgroundColor = "#92f46fff"
     }
     else {
         // console.log ("You lose :(");
+        compScore++;
+        compScoreShow.innerText = compScore;
         msg.innerText = "You lose :(";
         msg.style.backgroundColor = "#EF6461"
     }
