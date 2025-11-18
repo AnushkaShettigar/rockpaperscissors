@@ -44,10 +44,10 @@ const playGame = (userChoice) => {
         return;
     }
     else { 
-        if (userChoice === rock){
+        if (userChoice === "rock"){
             userState = compChoice === "paper" ? false : true;
         }
-        else if (userChoice === paper) {
+        else if (userChoice === "paper") {
             userState = compChoice === "sci" ? false: true;
         }
         else {
